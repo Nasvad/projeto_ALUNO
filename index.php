@@ -1,25 +1,30 @@
-<?php
-<?php
-//LOCAL
-  //$servername = "localhost";
-  //$username = "root";
-  //$password = "";
-  //$dbname   = "projeto_aluno";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade PHP</title>
+</head>
+<body>
+    <?php
+        echo "Praticando conexão com Banco de Dados MySQL <br>";
+    ?>
 
-  //HEROKU
-$servername = "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$username = "qhk1cyx98g8k22id";
-$password = "zgffr5qudwurqol1";
-$dbname   = "d5ppxxl81au16tva";
+    <h2>Códigos BackEnd</h2>
+    <a href="crud/create.php">Create</a>
+    <a href="crud/read.php">Read</a>
+    <a href="crud/update.php">Update</a>
+    <a href="crud/delete.php">Delete</a>
+    <br>
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
+    <h2>Páginas FrontEnd</h2>
+    <a href="cad_user.html">Cadastrar Usuário</a>
+    <a href="vis_user.php.">Visualizar Usuário</a>
 
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Conexão bem sucedida!";
-} catch(PDOException $e) {
-  echo "Conexão falhou! :(" . $e->getMessage();
-}
-?>
-echo "projeto aluno"
+</body>
+</html>
+
+
+
+
