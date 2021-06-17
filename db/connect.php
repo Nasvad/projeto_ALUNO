@@ -7,8 +7,8 @@
 
   //HEROKU
 $servername = "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-$username = "	qhk1cyx98g8k22id";
-$password = "	zgffr5qudwurqol1";
+$username = "qhk1cyx98g8k22id";
+$password = "zgffr5qudwurqol1";
 $dbname   = "d5ppxxl81au16tva";
 
 try {
