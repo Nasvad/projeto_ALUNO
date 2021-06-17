@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        echo "Praticando conexão com Banco de Dados MySQL <br>";
+        echo "Banco de dados com propósito de inserir alunos e suas notas <br>";
     ?>
 
     <h2>Comandos</h2>

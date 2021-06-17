@@ -2,13 +2,13 @@
 
 
 
-// Dados de conexão LOCAL
+//LOCAL
 //$servername = "localhost";
-//$username   = "root";
-//$password   = "";
-//$dbname     = "blog";
+//$username = "root";
+//$password = "";
+//$dbname   = "projeto_aluno";
 
-//Dados de conexão HEROKU
+//HEROKU
 $servername = "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $username = "qhk1cyx98g8k22id";
 $password = "zgffr5qudwurqol1";
@@ -17,8 +17,6 @@ $dbname   = "d5ppxxl81au16tva";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $stmt = $conn->prepare("SELECT * FROM users");
   $stmt->execute();
@@ -44,7 +42,8 @@ try {
     </td>';
     echo '</tr>';
   }
-} catch(PDOException $e) {
+} 
+catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
 $conn = null;
