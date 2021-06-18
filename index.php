@@ -12,8 +12,8 @@
     ?>
 
     <h2>Comandos</h2>
-    <a href="crud/create.php">Create</a>
-    <a href="crud/read.php">Read</a>
+    <a href="crud/create.php">Cadastrar aluno</a>
+    
     
 </body>
 </html>
