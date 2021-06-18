@@ -11,10 +11,10 @@
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 h1{
-    color: red;
+    color: #D2691E;
 }
 a {
-    color: red;
+    color: #D2691E;
 }
 body, html {height: 100%}
 .bgimg {
